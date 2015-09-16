@@ -18,8 +18,7 @@ lazy val commonBuildSettings = Seq (
     "-encoding", "UTF-8",
     "-target:jvm-1.8"),
 
-  publishArtifact in (Compile, packageDoc) := false,
-  publishArtifact in (Compile, packageSrc) := true
+  publishArtifact in Test := false
 
   // put a publishTo in your local global.sbt file
 )
